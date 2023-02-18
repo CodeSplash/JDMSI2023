@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journées Doctoriales en Mathématiques et Science de l'Ingénieur (JDMSI'23)</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--    NAVBAR  -->
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl"><span class="text-white-700">JDMSI</span>
+            <span class="text-violet-500">'2023</span></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#speakers">SPEAKERS</a></li>
+            <li><a href="#schedule">SCHEDULE</a></li>
+            <li><a href="#committees">COMMITTEES</a></li>
+            <li><a href="#sponsors">SPONSORS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end mr-4">
+          <a class="btn">REGISTER</a>
+        </div>
+    </div>
+    <!--  LANDING PAGE    -->
+    <div class="hero min-h-screen backdrop-blur-sm" style="background-image: url(./emphi.jpg);">
+        <div class="hero-overlay bg-opacity-70"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <p class="mb-5"> The third Edition of </p>
+            <h1 class="mb-2 text-5xl font-bold">The Doctoral Days on Mathematics and Engineering Sciences</h1>
+            <p class="mb-5 text-xl">13-14 March 2023, ENSA Khouribga, Morocco</p>
+            <button class="btn btn-primary">Register Now</button>
+          </div>
+        </div>
+    </div>
+    <!--  ABOUT US    -->
+    <section id="about" class="hero min-h-screen bg-white dark:bg-gray-900">
+        <div class="hero-content text-center">
+            <div class="w-full text-center pb-8">
+                <svg class="mx-auto" width="48" height="42" viewBox="0 0 48 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.6153 19.154H10.1537C9.38437 19.154 8.73037 18.8849 8.19185 18.3463C7.65363 17.8078 7.38417 17.154 7.38417 16.3845V15.4619C7.38417 13.4233 8.10546 11.6831 9.54795 10.2406C10.9903 8.79859 12.7309 8.0773 14.7693 8.0773H16.6153C17.1152 8.0773 17.5477 7.89453 17.9133 7.52929C18.2786 7.16384 18.4613 6.73131 18.4613 6.23128V2.53864C18.4613 2.03872 18.2785 1.60578 17.9133 1.24034C17.5478 0.875398 17.1153 0.692322 16.6153 0.692322H14.7693C12.7691 0.692322 10.8608 1.08212 9.04327 1.86059C7.22595 2.63958 5.65404 3.69257 4.32694 5.01967C2.99994 6.34616 1.94726 7.91817 1.16837 9.7357C0.389491 11.553 0 13.4618 0 15.4618V35.769C0 37.3083 0.538216 38.6152 1.61515 39.6926C2.69219 40.7693 4.00019 41.3076 5.53856 41.3076H16.616C18.1542 41.3076 19.4618 40.7693 20.539 39.6926C21.6157 38.6152 22.1542 37.3083 22.1542 35.769V24.6926C22.1542 23.1536 21.6157 21.8466 20.5383 20.7692C19.4616 19.6925 18.1535 19.154 16.6153 19.154Z" fill="#6366f1"/>
+                    <path d="M46.3856 20.7692C45.309 19.6925 44.0013 19.154 42.4626 19.154H36.0011C35.2322 19.154 34.5776 18.8849 34.04 18.3463C33.5012 17.8078 33.2323 17.154 33.2323 16.3845V15.4619C33.2323 13.4233 33.9536 11.6831 35.3954 10.2406C36.8372 8.79859 38.5777 8.0773 40.6171 8.0773H42.4627C42.9627 8.0773 43.3955 7.89453 43.7608 7.52929C44.1258 7.16384 44.3092 6.73131 44.3092 6.23128V2.53864C44.3092 2.03872 44.1259 1.60578 43.7608 1.24034C43.3956 0.875398 42.9628 0.692322 42.4627 0.692322H40.6171C38.6158 0.692322 36.7079 1.08212 34.8899 1.86059C33.0729 2.63958 31.5015 3.69257 30.1744 5.01967C28.8473 6.34616 27.7941 7.91817 27.0155 9.7357C26.2368 11.553 25.8468 13.4618 25.8468 15.4618V35.769C25.8468 37.3083 26.3855 38.6152 27.4622 39.6926C28.5389 40.7693 29.8466 41.3076 31.3852 41.3076H42.462C44.0006 41.3076 45.3082 40.7693 46.3849 39.6926C47.4623 38.6152 47.9999 37.3083 47.9999 35.769V24.6926C48 23.1535 47.4623 21.8466 46.3856 20.7692Z" fill="#6366f1"/>
+                </svg>
+                <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-violet-500 px-10 pt-10">About the conference</h1>
+                <h4 class="font-bold text-2xl text-violet-500 p-10 mb-5">Our aim and objectives :</h4>
+                <p class="text-gray-400 font-normal text-lg text-justify pb-10">
+                    The Doctoral days of Mathematics and Engineering Sciences event ("Journée doctorale en Mathématiques et Science d'Ingénieur - JDMSI'2023") is a unique opportunity for PhD students to present their innovative research work and discuss it with a community of specialists in the field. This event brings together professors, scientists, researchers and professionals from the academic community to explore the latest advances in mathematics and engineering science. Doctoral students will have the opportunity to present their research in detail to an attentive audience, to obtain constructive feedback and to meet potential colleagues and mentors. This day also provides an opportunity to discover new ideas and approaches in the fields of mathematics and engineering science, which can stimulate future collaboration and cooperation. In short, it is a stimulating platform for doctoral students to share their passion for research and enrich their academic career. 
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <!--  TOPICS  -->
+    <section class="hero min-h-screen bg-base-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4">
+            <div class="w-full text-center pb-8">
+                <svg class="mx-auto" width="48" height="42" viewBox="0 0 48 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.6153 19.154H10.1537C9.38437 19.154 8.73037 18.8849 8.19185 18.3463C7.65363 17.8078 7.38417 17.154 7.38417 16.3845V15.4619C7.38417 13.4233 8.10546 11.6831 9.54795 10.2406C10.9903 8.79859 12.7309 8.0773 14.7693 8.0773H16.6153C17.1152 8.0773 17.5477 7.89453 17.9133 7.52929C18.2786 7.16384 18.4613 6.73131 18.4613 6.23128V2.53864C18.4613 2.03872 18.2785 1.60578 17.9133 1.24034C17.5478 0.875398 17.1153 0.692322 16.6153 0.692322H14.7693C12.7691 0.692322 10.8608 1.08212 9.04327 1.86059C7.22595 2.63958 5.65404 3.69257 4.32694 5.01967C2.99994 6.34616 1.94726 7.91817 1.16837 9.7357C0.389491 11.553 0 13.4618 0 15.4618V35.769C0 37.3083 0.538216 38.6152 1.61515 39.6926C2.69219 40.7693 4.00019 41.3076 5.53856 41.3076H16.616C18.1542 41.3076 19.4618 40.7693 20.539 39.6926C21.6157 38.6152 22.1542 37.3083 22.1542 35.769V24.6926C22.1542 23.1536 21.6157 21.8466 20.5383 20.7692C19.4616 19.6925 18.1535 19.154 16.6153 19.154Z" fill="#6366f1"/>
+                    <path d="M46.3856 20.7692C45.309 19.6925 44.0013 19.154 42.4626 19.154H36.0011C35.2322 19.154 34.5776 18.8849 34.04 18.3463C33.5012 17.8078 33.2323 17.154 33.2323 16.3845V15.4619C33.2323 13.4233 33.9536 11.6831 35.3954 10.2406C36.8372 8.79859 38.5777 8.0773 40.6171 8.0773H42.4627C42.9627 8.0773 43.3955 7.89453 43.7608 7.52929C44.1258 7.16384 44.3092 6.73131 44.3092 6.23128V2.53864C44.3092 2.03872 44.1259 1.60578 43.7608 1.24034C43.3956 0.875398 42.9628 0.692322 42.4627 0.692322H40.6171C38.6158 0.692322 36.7079 1.08212 34.8899 1.86059C33.0729 2.63958 31.5015 3.69257 30.1744 5.01967C28.8473 6.34616 27.7941 7.91817 27.0155 9.7357C26.2368 11.553 25.8468 13.4618 25.8468 15.4618V35.769C25.8468 37.3083 26.3855 38.6152 27.4622 39.6926C28.5389 40.7693 29.8466 41.3076 31.3852 41.3076H42.462C44.0006 41.3076 45.3082 40.7693 46.3849 39.6926C47.4623 38.6152 47.9999 37.3083 47.9999 35.769V24.6926C48 23.1535 47.4623 21.8466 46.3856 20.7692Z" fill="#6366f1"/>
+                </svg>
+            
+                <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-violet-500 p-10">
+                    Topics
+                </h1>
+                <p class="text-gray-400 font-normal text-base"> Topics of interest to our event include but are not limited to: </p>
+            </div>
+            <div class="text-gray-600 body-font">
+                <div class="container px-5 py-16 mx-auto">
+                  <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+                    <div class="p-2 sm:w-1/2 w-full">
+                      <div class="dark:bg-gray-900 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                          <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                          <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="text-gray-400 title-font font-medium">Applied Mathematics and Optimisation</span>
+                      </div>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                      <div class="dark:bg-gray-900 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                          <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                          <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="text-gray-400 title-font font-medium">Image Processing and Computer Vision</span>
+                      </div>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                      <div class="dark:bg-gray-900 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                          <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                          <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="text-gray-400 title-font font-medium">Machine Learning and Artificial Intelligence</span>
+                      </div>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                      <div class="dark:bg-gray-900 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                          <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                          <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="text-gray-400 title-font font-medium">Data Mining and Analytics</span>
+                      </div>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                      <div class="dark:bg-gray-900 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                          <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                          <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="text-gray-400 title-font font-medium">Computational Methods and Algorithms </span>
+                      </div>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                      <div class="dark:bg-gray-900 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                          <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                          <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="text-gray-400 title-font font-medium">Computer and Data Science Applications</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Our Speakers    -->
+    <section id="speakers"class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+            <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Our Speakers</h1>
+    
+            <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+                Ours keynote speakers that will convey their knowledge and expertise to our participants:
+            </p>
+    
+            <div class="grid grid-cols-1 gap-8 mt-8 mb-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+                <div class="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-base-300 rounded-xl">
+                    <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://i1.rgstatic.net/ii/profile.image/278771304288262-1443475666548_Q512/Abderrahim-Elmoataz-2.jpg" alt="">
+    
+                    <h1 class="mt-2 text-xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Abderrahim Elmoataz</h1>
+                    <p class="mt-2 text-gray-500 text-justify capitalize dark:text-gray-300 group-hover:text-gray-300">Caen University, France</p>
+                </div>
+    
+                <div class="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-base-300 rounded-xl">
+                    <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://jmscii23.sciencesconf.org/data/pages/Karim_El_Moutaouakil_2.jpg" alt="">
+    
+                    <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Karim Moutaouakil</h1>
+    
+                    <p class="mt-2 text-gray-500 text-center capitalize dark:text-gray-300 group-hover:text-gray-300">Sidi Mohamed Ben Abdellah University, Morocco</p>
+                </div>
+    
+                <div class="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-base-300 rounded-xl">
+                    <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://jmscii23.sciencesconf.org/data/pages/photo_4.jpg" alt="">
+    
+                    <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Rachadi Abdeljalil</h1>
+    
+                    <p class="mt-2 text-gray-500 text-center capitalize dark:text-gray-300 group-hover:text-gray-300">Mohamed V University, Morocco</p>    
+                </div>
+    
+                <div class="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-base-300 rounded-xl">
+                    <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://jmscii23.sciencesconf.org/data/pages/Halima_Zaari_1.jpg" alt="">
+                    <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Halima Zaari</h1>
+                    <p class="mt-2 text-gray-500 text-center capitalize dark:text-gray-300 group-hover:text-gray-300">Mohamed V University, Morocco</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Committees -->
+<section id="committees"class="bg-base-500">
+    <div class="container px-6 py-10 mx-auto">
+        <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Committees</h1>
+    </div>
+
+    <div align="center">
+<table class="fr-no-borders" style="width: 90%;" align="center">
+<tbody>
+<tr class= "mb-5"bgcolor="#CCCCCC">
+<td style="width: 100%;" colspan="2">
+<div align="center"><span style="font-size: large; color: #0000ff;"><strong>HONORARY COMMITTEE</strong></span></div>
+</td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">
+<br>
+<h3 align="center"><span style="font-size: medium;"><strong>Pr. Dr. Mustapha ABOUMAAROUF</strong></span></h3>
+<h3 align="center"><span style="font-size: medium;"><strong>President of Sultan Moulay Slimane University, Beni-Mellal-Khouribga </strong></span></h3>
+</td>
+<td style="width: 50.0000%;">
+<br>
+<h3 align="center"><span style="font-size: medium;"><strong>Pr. Mohammed SAJIEDDINE</strong></span></h3>
+
+<h3 align="center"><span style="font-size: medium;"><strong>Director of the National School of Applied Science, Khouribga</strong></span><span style="font-size: medium;"> <br /></span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table class="fr-no-borders" style="width: 90%;" align="center">
+<tbody>
+<tr bgcolor="#CCCCCC">
+<td style="width: 100%; text-align: center;">&nbsp;<span style="color: #0000ff;"><strong><span style="font-size: large;">Coordination Committee</span></strong></span></td>
+</tr>
+<tr>
+<td style="width: 50.0000%;">&nbsp;<address><span style="font-size: medium;"><strong>Pr.&nbsp; Azouani Abderrahim, Sultan My Sliman University, Morocco</strong></span></address><address><span style="font-size: medium;"><strong><strong>Pr.&nbsp; El Hadfi Youssef,&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></span></address><address><span style="font-size: medium;"><strong><strong><strong><strong>Pr.&nbsp; Ghazdali Abdelghani,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></span></address><address><span style="font-size: medium;"><strong>Pr.&nbsp; Khalfi Hamza,&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></span></address><address><span style="font-size: medium;"><strong>Pr.&nbsp; Tahiri Mohamed,&nbsp;<strong><strong>Sultan My Sliman University, Morocco</strong></strong></strong></span></address></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table class="fr-no-borders" style="width: 90%;" align="center">
+<tbody>
+<tr bgcolor="#CCCCCC">
+<td style="width: 100%;">
+<div align="center"><span style="color: #0000ff;"><strong><span style="font-size: large;">General Organisation Committee</span></strong></span></div>
+</td>
+</tr>
+<tr>
+<td style="width: 50.0000%;"><address><span style="font-size: medium;"><strong>Pr. Abouelkheir Imane<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong>Pr. Aboutabit Noureddine<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong>Pr. Aghriche Ahmed<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong>Pr. Azouani Abderrahim, Sultan My Sliman University, Morocco</strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong>Pr. Bih Hssain<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong>Pr. Choukairi Khadija<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong>Pr. Dargham Abdelmjid<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong>Pr. El Bazi wail<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong>Pr. El Hadfi Youssef,&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></span></address><address>&nbsp;</address><address>&nbsp;<span style="font-size: medium;"><strong>Pr. Ennaji Fatima Ezzohra<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong>Pr.&nbsp; Ghazdali Abdelghani,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong>Pr. Hafidi Imad<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong>Pr. Idrissi Fatmi Nadia<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Pr. Ifzarne Aziz<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Pr. Jerradi Mohammed<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Pr. Kadiri My Saddik<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Pr. Khamar Hicham<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong>Pr. Khalfi Hamza<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Pr. Khallaki Kaoutar<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Pr. Laghrib Amine<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Pr. Lamghari Nidal<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address>&nbsp;<span style="font-size: medium;"><strong>Pr. Metrane Abdelmoutalib<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong>Pr. Ourdou Amal<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong>Pr. Rochd Yassir<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong><strong><strong><strong>Pr. Soussi Nassima<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong>Pr. Tahiri Mohamed,&nbsp;<strong><strong>Sultan My Sliman University, Morocco</strong></strong></strong></span></address><address>&nbsp;</address><address><span style="font-size: medium;"><strong><strong><strong>Pr. Touil Salah<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></strong></strong></span></address></td>
+</tr>
+</tbody>
+</table>
+<br>
+<table class="fr-no-borders" style="width: 90%;" align="center">
+    <tbody>
+    <tr bgcolor="#CCCCCC">
+    <td style="width: 100%;">
+    <div align="center"><span style="color: #0000ff;"><strong><span style="font-size: large;">Scientific Committee</span></strong></span></div>
+    </td>
+    </tr>
+    <tr>
+    <td style="width: 50.0000%;"><address><span style="font-size: medium;"><strong>Pr. Abouelkheir Imane<strong><strong><strong>,<strong>&nbsp;<strong>Sultan My Sliman University, Morocco</strong></strong></strong></strong></strong></strong></span></address>
+    </td>
+    </tr>
+    </tbody>
+</table>
+<div class="my-5" ></div>
+</div>
+</section>
+
+
+
+<!--    SCHEDULE    -->
+    <section id="schedule" class="mx-auto py-8 w-full max-w-8xl  dark:bg-gray-700">
+        <div class="mx-auto max-w-5xl py-12 min-h-screen">
+            <!--   TITLE CONTAINER     -->
+            <div class="mx-auto max-w-2xl text-center">
+                <h2 class="mt-3 text-2xl sm:text-4xl font-extrabold tracking-wide">
+                  <span class="text-white-700">Event </span>
+                  <span class="text-violet-500">Schedule</span>
+                </h2>
+            </div>
+            <!--   SCHEDULE     -->
+            <div class="mt-5 sm:mt-10 flex flex-col bg-violet-50">
+                <span class="flex items-center py-3 px-2 bg-base-300 text-gray-50">
+                    
+                    <h3 class="text-sm font-semibold uppercase tracking-wide">Monday 13th March 2023</h3>
+                </span> 
+                <!--    Events    -->
+                <ul class="py-1 flex flex-col">
+                    <li class="group py-3 px-2 sm:px-5 flex items-center">
+                        <!-- time container -->
+                        <div class="flex-shrink-0 mr-5 sm:mr-20 px-2 flex flex-col bg-violet-50">
+                            <span class="text-sm sm:text-base text-violet-500 font-bold">09:00 AM</span>
+                        </div>
+                        <!-- tdetails container  -->
+                            <div class="col-span-7 sm:col-span-6 px-3">
+                                <p class="text-base text-violet-700 font-bold uppercase">Registration</p>
+                            </div>
+                    </li>
+                    <li class="group py-3 px-2 sm:px-5 flex items-center">
+                        <!-- time container -->
+                        <div class="flex-shrink-0 mr-5 sm:mr-20 px-2 flex flex-col bg-violet-50">
+                            <span class="text-sm sm:text-base text-violet-500 font-bold">10:00 AM</span>
+                        </div>
+                        <!-- tdetails container  -->
+                            <div class="col-span-7 sm:col-span-6 px-3">
+                                <p class="text-base text-violet-700 font-bold uppercase">Plenary Conferences</p>
+                            </div>
+                    </li>
+                </li>
+                <li class="group py-3 px-2 sm:px-5 flex items-center">
+                    <!-- time container -->
+                    <div class="flex-shrink-0 mr-5 sm:mr-20 px-2 flex flex-col bg-violet-50">
+                        <span class="text-sm sm:text-base text-violet-500 font-bold">12:30 AM</span>
+                    </div>
+                    <!-- tdetails container  -->
+                        <div class="col-span-7 sm:col-span-6 px-3">
+                            <p class="text-base text-violet-700 font-bold uppercase">Lunch Break</p>
+                        </div>
+                </li>
+                <li class="group py-3 px-2 sm:px-5 flex items-center">
+                    <!-- time container -->
+                    <div class="flex-shrink-0 mr-5 sm:mr-20 px-2 flex flex-col bg-violet-50">
+                        <span class="text-sm sm:text-base text-violet-500 font-bold">14:30 AM</span>
+                    </div>
+                    <!-- tdetails container  -->
+                        <div class="col-span-7 sm:col-span-6 px-3">
+                            <p class="text-base text-violet-700 font-bold uppercase">Parallel Sessions</p>
+                        </div>
+                </li>
+                </ul>
+                <span class="flex items-center py-3 px-2 bg-base-300 text-gray-50">
+                    
+                    <h3 class="text-sm font-semibold uppercase tracking-wide">Thuesday 14th March 2023</h3>
+                </span> 
+                <!--    Events    -->
+                <ul class="py-1 flex flex-col">
+                    <li class="group py-3 px-2 sm:px-5 flex items-center">
+                        <!-- time container -->
+                        <div class="flex-shrink-0 mr-5 sm:mr-20 px-2 flex flex-col bg-violet-50">
+                            <span class="text-sm sm:text-base text-violet-500 font-bold">09:00 AM</span>
+                        </div>
+                        <!-- tdetails container  -->
+                            <div class="col-span-7 sm:col-span-6 px-3">
+                                <p class="text-base text-violet-700 font-bold uppercase">Plenary Conferences</p>
+                            </div>
+                    </li>
+                    <li class="group py-3 px-2 sm:px-5 flex items-center">
+                        <!-- time container -->
+                        <div class="flex-shrink-0 mr-5 sm:mr-20 px-2 flex flex-col bg-violet-50">
+                            <span class="text-sm sm:text-base text-violet-500 font-bold">10:00 AM</span>
+                        </div>
+                        <!-- tdetails container  -->
+                            <div class="col-span-7 sm:col-span-6 px-3">
+                                <p class="text-base text-violet-700 font-bold uppercase">Coffee Break</p>
+                            </div>
+                    </li>
+                    <li class="group py-3 px-2 sm:px-5 flex items-center">
+                        <!-- time container -->
+                        <div class="flex-shrink-0 mr-5 sm:mr-20 px-2 flex flex-col bg-violet-50">
+                            <span class="text-sm sm:text-base text-violet-500 font-bold">11:00 AM</span>
+                        </div>
+                        <!-- tdetails container  -->
+                            <div class="col-span-7 sm:col-span-6 px-3">
+                                <p class="text-base text-violet-700 font-bold uppercase">Poster Sessions</p>
+                            </div>
+                    </li>
+                    <li class="group py-3 px-2 sm:px-5 flex items-center">
+                        <!-- time container -->
+                        <div class="flex-shrink-0 mr-5 sm:mr-20 px-2 flex flex-col bg-violet-50">
+                            <span class="text-sm sm:text-base text-violet-500 font-bold">12:30 AM</span>
+                        </div>
+                        <!-- tdetails container  -->
+                            <div class="col-span-7 sm:col-span-6 px-3">
+                                <p class="text-base text-violet-700 font-bold uppercase">Lunch Break</p>
+                            </div>
+                    </li>
+                    <li class="group py-3 px-2 sm:px-5 flex items-center">
+                        <!-- time container -->
+                        <div class="flex-shrink-0 mr-5 sm:mr-20 px-2 flex flex-col bg-violet-50">
+                            <span class="text-sm sm:text-base text-violet-500 font-bold">14:00 AM</span>
+                        </div>
+                        <!-- tdetails container  -->
+                            <div class="col-span-7 sm:col-span-6 px-3">
+                                <p class="text-base text-violet-700 font-bold uppercase">Poster Sessions</p>
+                            </div>
+                    </li>
+                    <li class="group py-3 px-2 sm:px-5 flex items-center">
+                        <!-- time container -->
+                        <div class="flex-shrink-0 mr-5 sm:mr-20 px-2 flex flex-col bg-violet-50">
+                            <span class="text-sm sm:text-base text-violet-500 font-bold">17:30 AM</span>
+                        </div>
+                        <!-- tdetails container  -->
+                            <div class="col-span-7 sm:col-span-6 px-3">
+                                <p class="text-base text-violet-700 font-bold uppercase">Conference Closing</p>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>    
+
+    <!--    SUBMISSION  
+    <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-5xl font-bold">Submission</h1>
+            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <button class="btn btn-primary">Get Started</button>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+    </div>
+    -->
+
+    <!-- Sponsers -->
+    <section class="py-8 sm:py-10 lg:py-14 bg-base-350">
+        <div class="px-10 sm:px-10 lg:px-14 max-w-screen-2xl mx-auto">
+            <div class="sm:h-40 grid grid-cols-2 md:grid-cols-4 sm:content-evenly rounded-lg gap-6 p-6">
+            
+                <div class="flex justify-center text-gray-400">
+                    <img class="w-auto h-32" src="https://ensak.usms.ac.ma/lipim/ima/logosur1.png" alt="" />
+                </div>
+    
+                <div class="flex justify-center text-gray-400">
+                    <img class="w-auto h-32" src="https://ensak.usms.ac.ma/lipim/ima/logosur2.png" alt="" />
+                </div>
+                
+                <div class="flex justify-center text-gray-400">
+                    <img class="w-auto h-32" src="./jdmsi.png" alt="" />
+                </div>
+
+                <div class="flex justify-center text-gray-400">
+                    <img class="w-auto h-32" src="https://ensak.usms.ac.ma/lipim/ima/logo-LIPIM-Final.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="text-gray-600 body-font relative dark:bg-gray-700">
+        <div class="min-h-screen px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+          <div class="lg:w-3/4 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+            <iframe class="absolute inset-0" style="filter: grayscale(1) contrast(1.2) opacity(0.4);" title="map" marginheight="0" marginwidth="0" scrolling="no"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.037541199755!2d-6.9159525845615075!3d32.89717568093587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda69d51a4eccd09%3A0x2fe5964c283fb57a!2s%C3%89cole%20Nationale%20des%20Sciences%20Appliqu%C3%A9es%20de%20Khouribga!5e0!3m2!1sfr!2sma!4v1676677445562!5m2!1sfr!2sma" width="100%" height="100%" frameborder="0"></iframe>
+            
+            <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+              <div class="lg:w-1/2 px-6">
+                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                <p class="mt-1">Ecole Nationale des Sciences Appliquées Bd Béni Amir, BP 77 Khouribga - Maroc.</p>
+              </div>
+              <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+                <a class="text-indigo-500 leading-relaxed">contact.ensak@usms.ma</a>
+                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+                <p class="leading-relaxed">+212523492335 / +212618534372</p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/3 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+            <div class="my-auto">
+                <h2 class="text-gray-300 text-2xl text-center mb-1 font-medium title-font mb-10">Get in Touch</h2>
+                <p class="leading-relaxed mb-7 text-gray-200">If you have any inquiries about the event, the submission process, please contact us at :</p>
+                <div class="relative mb-4">
+                    <label for="name" class="leading-7 text-sm text-gray-200">Name : Hamza Khalfi</label>
+                 </div>
+                <div class="relative mb-4">
+                    <label for="email" class="leading-7 text-sm text-gray-200">Email : h.khalfi@usms.ma</label>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--    FOOTER  -->  
+    <footer class="footer-center text-base-content dark:bg-gray-700">
+		<section class="footer p-10 bg-neutral text-neutral-content">
+            <div>
+                <span class="footer-title"><img class="w-auto h-32 ml-28" src="./jdmsi.png" alt="" /></span> 
+                    <ul class="text-neutral-content">
+			            <li>Doctoral Days of Mathematics and Engineering Sciences</li>
+			            <li>National School of Applied Sciences of Khouribga</li>
+                        <li>Sultan Moulay Slimane University</li>
+                    </ul>
+            </div> 
+            <div>
+                <span class="footer-title">Contact</span> 
+                <ul class="text-justify">
+                    <li>h.khalfi@usms.ma</li>
+                    <li>a.ghazdali@usms.ma</li>
+                    <li>Tel: 0606313159/0662077441</li>
+                </ul>
+        </div> 
+            <div>
+                <span class="footer-title">Legal</span> 
+                    <a class="link link-hover">Terms of use</a>
+                    <a class="link link-hover">Privacy policy</a>
+                    <a class="link link-hover">Sitemap</a>
+            </div>
+		</section>
+        <div class="p-4">
+          <p>Copyright © 2023 - All right reserved by JDMSI event.</p>
+        </div>
+    </footer>
+
+    
+
+    
+    
+</body>
+</html>
