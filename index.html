@@ -17,19 +17,25 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </label>
             <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Item 1</a></li>
-              <li><a>Item 2</a></li>
-              <li><a>Item 3</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#speakers">SPEAKERS</a></li>
+                <li><a href="#cfa">CALL FOR ABSTRACTS</a></li>
+                <li><a href="#schedule">SCHEDULE</a></li>
+                <li><a href="#committees">COMMITTEES</a></li>
+                <li><a href="#sponsors">SPONSORS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
           <a class="btn btn-ghost normal-case text-xl"><span class="text-white-700">JDMSI</span>
             <span class="text-violet-500">'2023</span></a>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
+          <ul class="menu menu-horizontal px-1 text-sm">
             <li><a href="#">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#speakers">SPEAKERS</a></li>
+            <li><a href="#cfa">CALL FOR ABSTRACTS</a></li>
             <li><a href="#schedule">SCHEDULE</a></li>
             <li><a href="#committees">COMMITTEES</a></li>
             <li><a href="#sponsors">SPONSORS</a></li>
@@ -37,7 +43,7 @@
           </ul>
         </div>
         <div class="navbar-end mr-4">
-          <a class="btn" href="https://form.jotform.com/230478499765576">REGISTER</a>
+          <a class="btn" href="https://form.jotform.com/230478499765576" target="_blank">REGISTER</a>
         </div>
     </div>
     <!--  LANDING PAGE    -->
@@ -48,8 +54,10 @@
             <p class="mb-5"> The third Edition of </p>
             <h1 class="mb-2 text-5xl font-bold">The Doctoral Days on Mathematics and Engineering Sciences</h1>
             <p class="mb-5 text-xl">13-14 March 2023, ENSA Khouribga, Morocco</p>
-            <button class="btn btn-primary"><a href="https://form.jotform.com/230478499765576">Register Now<a/></button>
-            <button class="btn btn-primary"><a href="#">Download Template<a/></button>
+            <div class="text-center">
+            <a class="btn btn-primary mr-3" href="https://form.jotform.com/230478499765576" target="_blank">Register Now</a>
+            <a class="btn btn-primary" href="./JDMSI23_AbstractTemplate.zip">Download Template</a>
+            </div>
           </div>
         </div>
     </div>
@@ -146,6 +154,7 @@
             </div>
         </div>
     </section>
+
     <!--  Our Speakers    -->
     <section id="speakers"class="bg-white dark:bg-gray-900">
         <div class="container px-6 py-10 mx-auto">
@@ -188,6 +197,59 @@
         </div>
     </div>
 </section>
+
+
+<section class="hero min-h-screen bg-base-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4">
+        <div class="w-full text-center pb-4">
+            <svg class="mx-auto" width="48" height="42" viewBox="0 0 48 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.6153 19.154H10.1537C9.38437 19.154 8.73037 18.8849 8.19185 18.3463C7.65363 17.8078 7.38417 17.154 7.38417 16.3845V15.4619C7.38417 13.4233 8.10546 11.6831 9.54795 10.2406C10.9903 8.79859 12.7309 8.0773 14.7693 8.0773H16.6153C17.1152 8.0773 17.5477 7.89453 17.9133 7.52929C18.2786 7.16384 18.4613 6.73131 18.4613 6.23128V2.53864C18.4613 2.03872 18.2785 1.60578 17.9133 1.24034C17.5478 0.875398 17.1153 0.692322 16.6153 0.692322H14.7693C12.7691 0.692322 10.8608 1.08212 9.04327 1.86059C7.22595 2.63958 5.65404 3.69257 4.32694 5.01967C2.99994 6.34616 1.94726 7.91817 1.16837 9.7357C0.389491 11.553 0 13.4618 0 15.4618V35.769C0 37.3083 0.538216 38.6152 1.61515 39.6926C2.69219 40.7693 4.00019 41.3076 5.53856 41.3076H16.616C18.1542 41.3076 19.4618 40.7693 20.539 39.6926C21.6157 38.6152 22.1542 37.3083 22.1542 35.769V24.6926C22.1542 23.1536 21.6157 21.8466 20.5383 20.7692C19.4616 19.6925 18.1535 19.154 16.6153 19.154Z" fill="#6366f1"/>
+                <path d="M46.3856 20.7692C45.309 19.6925 44.0013 19.154 42.4626 19.154H36.0011C35.2322 19.154 34.5776 18.8849 34.04 18.3463C33.5012 17.8078 33.2323 17.154 33.2323 16.3845V15.4619C33.2323 13.4233 33.9536 11.6831 35.3954 10.2406C36.8372 8.79859 38.5777 8.0773 40.6171 8.0773H42.4627C42.9627 8.0773 43.3955 7.89453 43.7608 7.52929C44.1258 7.16384 44.3092 6.73131 44.3092 6.23128V2.53864C44.3092 2.03872 44.1259 1.60578 43.7608 1.24034C43.3956 0.875398 42.9628 0.692322 42.4627 0.692322H40.6171C38.6158 0.692322 36.7079 1.08212 34.8899 1.86059C33.0729 2.63958 31.5015 3.69257 30.1744 5.01967C28.8473 6.34616 27.7941 7.91817 27.0155 9.7357C26.2368 11.553 25.8468 13.4618 25.8468 15.4618V35.769C25.8468 37.3083 26.3855 38.6152 27.4622 39.6926C28.5389 40.7693 29.8466 41.3076 31.3852 41.3076H42.462C44.0006 41.3076 45.3082 40.7693 46.3849 39.6926C47.4623 38.6152 47.9999 37.3083 47.9999 35.769V24.6926C48 23.1535 47.4623 21.8466 46.3856 20.7692Z" fill="#6366f1"/>
+            </svg>
+        
+            <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-violet-500 p-10">
+                Call For Abstracts
+            </h1>
+            <p class="text-gray-400 font-normal text-base"> Please register and submit your abstract following the guidelines below: </p>
+        </div>
+        <div class="hero-content text-center">
+            <div class="px-6 px-auto">
+              <p class="py-3 text-justify">Prospective authors are kindly encouraged to contribute to and help shape the doctoral days through submissions of their research abstracts, extended abstracts. Submissions should contain original results obtained by the participant which demonstrates his recent advances in any topic related to the fields of interest. </p>
+              <p class="py-3 text-justify">The abstracts must be in English and the number of pages should not exceed 2 pages. We urge our participants to include a concise and clear description of their works in the form of a clear title, an abstract motivating the topic and describing the results as well as references and keywords.</p>
+              <p class="py-3 text-justify">All abstracts will be reviewed by the committee based on their originality, significance, methodological soundness, and clarity of exposition.  Submissions of Abstract should be made before <strong class="text-red-600">Monday March 6, 2023</strong> to be considered for communication in this event.
+              </p>
+              <div class="mx-auto py-12 text-justify">
+              <table class="table-fixed">
+                <thead>
+                  <tr>
+                    <th>Submission deadline </th>
+                    <th class="text-red-600"><h4 class="ml-5">March 6, 2023</h4></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td >Acceptance Notification</td>
+                    <td><h4 class="ml-5">March 9, 2023</h4></td>
+                  </tr>
+                  <tr>
+                    <td>Final Program :</td>
+                    <td><h4 class="ml-5">March 11, 2023</h4></td>
+                  </tr>
+                  <tr>
+                    <td>Conference Days :</td>
+                    <td><h4 class="ml-5">March 13-14, 2023</h4></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+              <a class="btn btn-primary" href="./JDMSI23_AbstractTemplate.zip">Download Abstract Template</a>
+            </div>
+          </div>
+    </div>
+</section>
+
+<!--    SUBMISSION --> 
+    
 
 
 <!-- Committees -->
@@ -266,7 +328,6 @@
 <div class="my-5" ></div>
 </div>
 </section>
-
 
 
 <!--    SCHEDULE    -->
@@ -399,22 +460,10 @@
             </div>
         </div>
     </section>    
+    
 
-    <!--    SUBMISSION  
-    <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content text-center">
-          <div class="max-w-md">
-            <h1 class="text-5xl font-bold">Submission</h1>
-            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            <button class="btn btn-primary">Get Started</button>
-            <button class="btn btn-primary">Get Started</button>
-          </div>
-        </div>
-    </div>
-    -->
-
-    <!-- Sponsers -->
-    <section class="py-8 sm:py-10 lg:py-14 bg-base-350">
+    <!-- Sponsors -->
+    <section id="sponsors" class="py-8 sm:py-10 lg:py-14 bg-base-350">
         <div class="px-10 sm:px-10 lg:px-14 max-w-screen-2xl mx-auto">
             <div class="sm:h-40 grid grid-cols-2 md:grid-cols-4 sm:content-evenly rounded-lg gap-6 p-6">
             
@@ -425,13 +474,13 @@
                 <div class="flex justify-center text-gray-400">
                     <img class="w-auto h-32" src="https://ensak.usms.ac.ma/lipim/ima/logosur2.png" alt="" />
                 </div>
-                
+
                 <div class="flex justify-center text-gray-400">
-                    <img class="w-auto h-32" src="./jdmsi.png" alt="" />
+                    <img class="w-auto" src="https://ensak.usms.ac.ma/lipim/ima/logo-LIPIM-Final.png" alt="" />
                 </div>
 
                 <div class="flex justify-center text-gray-400">
-                    <img class="w-auto h-32" src="https://ensak.usms.ac.ma/lipim/ima/logo-LIPIM-Final.png" alt="" />
+                    <img class="w-auto h-32" src="./ss.png" alt="" />
                 </div>
             </div>
         </div>
@@ -460,19 +509,21 @@
                 <h2 class="text-gray-300 text-2xl text-center mb-1 font-medium title-font mb-10">Get in Touch</h2>
                 <p class="leading-relaxed mb-7 text-gray-200">If you have any inquiries about the event, the submission process, please contact us at :</p>
                 <div class="relative mb-4">
-                    <label for="name" class="leading-7 text-sm text-gray-200">Name : Hamza Khalfi</label>
-                 </div>
-                <div class="relative mb-4">
+                    <label for="name" class="leading-7 text-sm text-gray-200">Name   : Hamza Khalfi</label><br>
                     <label for="email" class="leading-7 text-sm text-gray-200">Email : h.khalfi@usms.ma</label>
-                </div>
+                 </div>
+                 <div class="relative mb-4">
+                    <label for="name" class="leading-7 text-sm text-gray-200">Name   : Abdelghani Ghazdali</label><br>
+                    <label for="email" class="leading-7 text-sm text-gray-200">Email : a.ghazdali@usms.ma</label>
+                 </div>
             </div>
           </div>
         </div>
       </section>
 
     <!--    FOOTER  -->  
-    <footer class="footer-center text-base-content dark:bg-gray-700">
-		<section class="footer p-10 bg-neutral text-neutral-content">
+    <footer class="footer-center text-base-content dark:bg-gray-600">
+		<section class="footer p-10 bg-gray-650 text-neutral-content">
             <div>
                 <span class="footer-title"><img class="w-auto h-32 ml-28" src="./jdmsi.png" alt="" /></span> 
                     <ul class="text-neutral-content">
@@ -481,25 +532,27 @@
                         <li>Sultan Moulay Slimane University</li>
                     </ul>
             </div> 
-            <div>
+            <div class="pt-10">
                 <span class="footer-title">Contact</span> 
                 <ul class="text-justify">
                     <li>h.khalfi@usms.ma</li>
+                    <li>GSM : 0606313159</li>
                     <li>a.ghazdali@usms.ma</li>
-                    <li>Tel: 0606313159/0662077441</li>
+                    <li>GSM : 0662077441</li>
                 </ul>
         </div> 
-            <div>
+            <div class="pt-10">
                 <span class="footer-title">Legal</span> 
                     <a class="link link-hover">Terms of use</a>
                     <a class="link link-hover">Privacy policy</a>
                     <a class="link link-hover">Sitemap</a>
             </div>
 		</section>
-        <div class="p-4">
+        <div class="p-4 bg-gray-700">
           <p>Copyright © 2023 - All right reserved by JDMSI event.</p>
         </div>
     </footer>
-
+ 
+    
 </body>
 </html>
